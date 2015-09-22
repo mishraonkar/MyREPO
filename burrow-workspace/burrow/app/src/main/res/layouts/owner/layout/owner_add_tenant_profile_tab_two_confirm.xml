@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:layout_margin="10dp"
+        android:text="Are you sure that all the documents are valid"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#bdbdbd"
+        android:textSize="15sp"
+        android:layout_margin="10dp"
+        android:text="Are you sure that all the uploaded documents are valid documents..."/>
+
+    <CheckBox
+        android:id="@+id/checkBox_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I agree that all the document are valid." />
+    
+        <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp" >
+
+        <Button
+            android:id="@+id/button_no"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/white"
+            android:text="No"
+            android:textColor="#00796B"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/button_yes"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:text="Yes"
+            android:textColor="#00796B"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+
+
+

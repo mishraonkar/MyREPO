@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#1EA81F" >
+
+    <ImageView
+        android:id="@+id/imageView_logo"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/burrowmascot"
+        android:transitionName="profile" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="15dp"
+        android:orientation="vertical" >
+
+        <android.support.design.widget.TextInputLayout
+            xmlns:app="http://schemas.android.com/apk/lib-auto"
+            android:id="@+id/textInputLayout_otp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            app:hintTextAppearance="@style/TextAppearence.OTP"
+            android:theme="@style/TextAppearence.OTP" >
+
+            <EditText
+                android:id="@+id/editText_otp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Enter OTP Received via email"
+                android:singleLine="true"
+                android:textColorHint="#FFFFFF"
+                android:textSize="16dp"
+                android:textColor="@color/white"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/textView_didntRecieve"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Didn&apos;t recieve OTP?"
+            android:textColor="#fff"
+            android:textSize="10dp"
+            android:layout_marginTop="30dp" />
+
+        <TextView
+            android:id="@+id/textView_resend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="RESEND"
+            android:textColor="#fff"
+            android:textSize="16dp" 
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"/>
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,99 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="burrow.co.in">
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="23" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".InitialActivity"
+            android:windowSoftInputMode="stateHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="burrow.co.in.owner.activities.OwnerMainActivity"
+            android:label=""
+            android:theme="@style/AppThemeOwner"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="burrow.co.in.owner.activities.AddBuildingActivity"
+            android:label=""
+            android:theme="@style/AppThemeOwner"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="burrow.co.in.owner.activities.BuildingDetailActivity"
+            android:label=""
+            android:theme="@style/AppThemeOwner"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="burrow.co.in.owner.activities.AddTenantActivity"
+            android:label=""
+            android:theme="@style/AppThemeOwner"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="burrow.co.in.owner.activities.ProfileTenantActivity"
+            android:label=""
+            android:theme="@style/AppThemeOwner"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="burrow.co.in.owner.activities.AddTenantProfile"
+            android:label=""
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="burrow.co.in.owner.menu.ProfileActivety"
+            android:label=""
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="burrow.co.in.owner.menu.NotificationOwner"
+            android:label=""
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="burrow.co.in.owner.menu.OwnerSendHistory"
+            android:label=""
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="burrow.co.in.owner.menu.OwnerRentOverview"
+            android:label=""
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+
+        <service
+            android:name="com.amazonaws.mobileconnectors.s3.transferutility.TransferService"
+            android:enabled="true" />
+    </application>
+
+</manifest>
